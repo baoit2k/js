@@ -5,58 +5,63 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
+	<style>
+		img{
+			transition: all 0.5s;
+		}
+	</style>
 </head>
 <body>
 	
-		<input type="text" id="number" onkeyup="get()">
-		<button type="button" onclick="getImg()">submit</button>
-		<h1 id="tb"></h1>
-		<h2 id="tb2"></h2>
-		<h2 id="tb3"></h2>
-		<h2 id="tb4"></h2>
-		<h2 id="tb5"></h2>
-		<h2 id="tb6"></h2>
-		<img src="0.gif" alt="" id="0">
-		<img src="1.gif" alt="" id="1">
-		<img src="2.gif" alt="" id="2">
-		<img src="3.gif" alt="" id="3">
-		<img src="4.gif" alt="" id="4">
-		<img src="5.gif" alt="" id="5">
-		<img src="6.gif" alt="" id="6">
-		<img src="7.gif" alt="" id="7">
-		<img src="8.gif" alt="" id="8">
-		<img src="9.gif" alt="" id="9">
+	<input type="text" id="number" onkeyup="get()">
+	<button type="button" onclick="getImg()">submit</button>
+	<h1 id="tb"></h1>
+	<h2 id="tb2"></h2>
+	<h2 id="tb3"></h2>
+	<h2 id="tb4"></h2>
+	<h2 id="tb5"></h2>
+	<h2 id="tb6"></h2>
+	<img src="0.gif" alt="" id="0">
+	<img src="1.gif" alt="" id="1">
+	<img src="2.gif" alt="" id="2">
+	<img src="3.gif" alt="" id="3">
+	<img src="4.gif" alt="" id="4">
+	<img src="5.gif" alt="" id="5">
+	<img src="6.gif" alt="" id="6">
+	<img src="7.gif" alt="" id="7">
+	<img src="8.gif" alt="" id="8">
+	<img src="9.gif" alt="" id="9">
 	
 	
 	<script>
 		var img = [
-			"0.gif",
-			"1.gif",
-			"2.gif",
-			"3.gif",
-			"4.gif",
-			"5.gif",
-			"6.gif",
-			"7.gif",
-			"8.gif",
-			"9.gif",
+		"0.gif",
+		"1.gif",
+		"2.gif",
+		"3.gif",
+		"4.gif",
+		"5.gif",
+		"6.gif",
+		"7.gif",
+		"8.gif",
+		"9.gif",
 		]
-		 var arrImg = [
-		 	 images  = document.getElementById('0'),
-		 	 images1 = document.getElementById('1'),
-			 images2 = document.getElementById('2'),
-			 images3 = document.getElementById('3'),
-			 images4 = document.getElementById('4'),
-			 images5 = document.getElementById('5'),
-			 images6 = document.getElementById('6'),
-			 images7 = document.getElementById('7'),
-			 images8 = document.getElementById('8'),
-			 images9 = document.getElementById('9')
-			]
+		var arrImg = [
+		images  = document.getElementById('0'),
+		images1 = document.getElementById('1'),
+		images2 = document.getElementById('2'),
+		images3 = document.getElementById('3'),
+		images4 = document.getElementById('4'),
+		images5 = document.getElementById('5'),
+		images6 = document.getElementById('6'),
+		images7 = document.getElementById('7'),
+		images8 = document.getElementById('8'),
+		images9 = document.getElementById('9')
+		]
 		console.log(img[1]);
 		const get = () => {
-		let n = document.getElementById('number').value;
-		document.getElementById('tb').innerHTML= n;
+			let n = document.getElementById('number').value;
+			document.getElementById('tb').innerHTML= n;
 		}
 		const getImg = () => {
 			
@@ -363,7 +368,7 @@
 			if(myIput[7] == 9){
 				arrImg[7].src = img[9];
 			}
-		
+
 			if(myIput[9] == 0){
 				arrImg[9].src = img[0];
 			}
@@ -396,7 +401,7 @@
 			}
 			
 		}
- 	</script>
+	</script>
 </body>
 </html>
 
