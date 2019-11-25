@@ -14,7 +14,7 @@
 <body>
 	
 	<input type="text" id="number" onkeyup="get()">
-	<button type="button" onclick="getImg()">submit</button>
+	<button type="button" onclick="checkNumber()">in ra ảnh</button>
 	<h1 id="tb"></h1>
 	<h2 id="tb2"></h2>
 	<h2 id="tb3"></h2>
@@ -58,15 +58,9 @@
 		images8 = document.getElementById('8'),
 		images9 = document.getElementById('9')
 		]
-		console.log(img[1]);
 		const get = () => {
 			let n = document.getElementById('number').value;
 			document.getElementById('tb').innerHTML= n;
-		}
-		const getImg = () => {
-			
-			checkNumber();
-			
 		}
 		const checkNumber= () => {
 			let n = document.getElementById('number').value;
@@ -82,325 +76,18 @@
 			k = n.slice(8,9),
 			l = n.slice(9,10)
 			]
-			if(myIput[0] == 0){
-				arrImg[0].src = img[0];
-			}
-			if(myIput[0] == 1){
-				arrImg[0].src = img[1];
-			}
-			if(myIput[0] == 2){
-				arrImg[0].src = img[2];
-			}
-			if(myIput[0] == 3){
-				arrImg[0].src = img[3];
-			}
-			if(myIput[0] == 4){
-				arrImg[0].src = img[4];
-			}
-			if(myIput[0] == 5){
-				arrImg[0].src = img[5];
-			}
-			if(myIput[0] == 6){
-				arrImg[0].src = img[6];
-			}
-			if(myIput[0] == 7){
-				arrImg[0].src = img[7];
-			}
-			if(myIput[0] == 8){
-				arrImg[0].src = img[8];
-			}
-			if(myIput[0] == 9){
-				arrImg[0].src = img[9];
-			}
-			else{
-				console.log('sai')
-			}
-			if(myIput[1] == 0){
-				arrImg[1].src = img[0];
-			}
-			if(myIput[1] == 1){
-				arrImg[1].src = img[1];
-			}
-			if(myIput[1] == 2){
-				arrImg[1].src = img[2];
-			}
-			if(myIput[1] == 3){
-				arrImg[1].src = img[3];
-			}
-			if(myIput[1] == 4){
-				arrImg[1].src = img[4];
-			}
-			if(myIput[1] == 5){
-				arrImg[1].src = img[5];
-			}
-			if(myIput[1] == 6){
-				arrImg[1].src = img[6];
-			}
-			if(myIput[1] == 7){
-				arrImg[1].src = img[7];
-			}
-			if(myIput[1] == 8){
-				arrImg[1].src = img[8];
-			}
-			if(myIput[1] == 9){
-				arrImg[1].src = img[9];
-			}
-			if(myIput[2] == 0){
-				arrImg[2].src = img[0];
-			}
-			if(myIput[2] == 1){
-				arrImg[2].src = img[1];
-			}
-			if(myIput[2] == 2){
-				arrImg[2].src = img[2];
-			}
-			if(myIput[2] == 3){
-				arrImg[2].src = img[3];
-			}
-			if(myIput[2] == 4){
-				arrImg[2].src = img[4];
-			}
-			if(myIput[2] == 5){
-				arrImg[2].src = img[5];
-			}
-			if(myIput[2] == 6){
-				arrImg[2].src = img[6];
-			}
-			if(myIput[2] == 7){
-				arrImg[2].src = img[7];
-			}
-			if(myIput[2] == 8){
-				arrImg[2].src = img[8];
-			}
-			if(myIput[2] == 9){
-				arrImg[2].src = img[9];
-			}
-			else{
-				console.log('sai')
-			}
+			for(l = 0; i <= myInput.length; l++){
+				for(j = 0 ; j <= 9 ; j++){
+					for(p = 0 ; p <= arrImg.length; p++){
+						for(z = 0 ; z < img.length; z++)
+							if(myIput[l] == j){
+								arrImg[p].src = img[0];
+							}
 
-			if(myIput[3] == 0){
-				arrImg[3].src = img[0];
-			}
-			if(myIput[3] == 1){
-				arrImg[3].src = img[1];
-			}
-			if(myIput[3] == 2){
-				arrImg[3].src = img[2];
-			}
-			if(myIput[3] == 3){
-				arrImg[3].src = img[3];
-			}
-			if(myIput[3] == 4){
-				arrImg[3].src = img[4];
-			}
-			if(myIput[3] == 5){
-				arrImg[3].src = img[5];
-			}
-			if(myIput[3] == 6){
-				arrImg[3].src = img[6];
-			}
-			if(myIput[3] == 7){
-				arrImg[3].src = img[7];
-			}
-			if(myIput[3] == 8){
-				arrImg[3].src = img[8];
-			}
-			if(myIput[3] == 9){
-				arrImg[3].src = img[9];
-			}
-			else{
-				console.log('sai')
-			}
-			if(myIput[4] == 0){
-				arrImg[4].src = img[0];
-			}
-			if(myIput[4] == 1){
-				arrImg[4].src = img[1];
-			}
-			if(myIput[4] == 2){
-				arrImg[4].src = img[2];
-			}
-			if(myIput[4] == 3){
-				arrImg[4].src = img[3];
-			}
-			if(myIput[4] == 4){
-				arrImg[4].src = img[4];
-			}
-			if(myIput[4] == 5){
-				arrImg[4].src = img[5];
-			}
-			if(myIput[4] == 6){
-				arrImg[4].src = img[6];
-			}
-			if(myIput[4] == 7){
-				arrImg[4].src = img[7];
-			}
-			if(myIput[4] == 8){
-				arrImg[4].src = img[8];
-			}
-			if(myIput[4] == 9){
-				arrImg[4].src = img[9];
-			}
-			if(myIput[5] == 0){
-				arrImg[5].src = img[0];
-			}
-			if(myIput[5] == 1){
-				arrImg[5].src = img[1];
-			}
-			if(myIput[5] == 2){
-				arrImg[5].src = img[2];
-			}
-			if(myIput[5] == 3){
-				arrImg[5].src = img[3];
-			}
-			if(myIput[5] == 4){
-				arrImg[5].src = img[4];
-			}
-			if(myIput[5] == 5){
-				arrImg[5].src = img[5];
-			}
-			if(myIput[5] == 6){
-				arrImg[5].src = img[6];
-			}
-			if(myIput[5] == 7){
-				arrImg[5].src = img[7];
-			}
-			if(myIput[5] == 8){
-				arrImg[5].src = img[8];
-			}
-			if(myIput[5] == 9){
-				arrImg[5].src = img[9];
-			}
-			else{
-				console.log('sai')
-			}
-			if(myIput[6] == 0){
-				arrImg[6].src = img[0];
-			}
-			if(myIput[6] == 1){
-				arrImg[6].src = img[1];
-			}
-			if(myIput[6] == 2){
-				arrImg[6].src = img[2];
-			}
-			if(myIput[6] == 3){
-				arrImg[6].src = img[3];
-			}
-			if(myIput[6] == 4){
-				arrImg[6].src = img[4];
-			}
-			if(myIput[6] == 5){
-				arrImg[6].src = img[5];
-			}
-			if(myIput[6] == 6){
-				arrImg[6].src = img[6];
-			}
-			if(myIput[6] == 7){
-				arrImg[6].src = img[7];
-			}
-			if(myIput[6] == 8){
-				arrImg[6].src = img[8];
-			}
-			if(myIput[6] == 9){
-				arrImg[6].src = img[9];
-			}
-			if(myIput[8] == 0){
-				arrImg[8].src = img[0];
-			}
-			if(myIput[8] == 1){
-				arrImg[8].src = img[1];
-			}
-			if(myIput[8] == 2){
-				arrImg[8].src = img[2];
-			}
-			if(myIput[8] == 3){
-				arrImg[8].src = img[3];
-			}
-			if(myIput[8] == 4){
-				arrImg[8].src = img[4];
-			}
-			if(myIput[8] == 5){
-				arrImg[8].src = img[5];
-			}
-			if(myIput[8] == 6){
-				arrImg[8].src = img[6];
-			}
-			if(myIput[8] == 7){
-				arrImg[8].src = img[7];
-			}
-			if(myIput[8] == 8){
-				arrImg[8].src = img[8];
-			}
-			if(myIput[8] == 9){
-				arrImg[8].src = img[9];
-			}
-			else{
-				console.log('sai')
-			}
-			if(myIput[7] == 0){
-				arrImg[7].src = img[0];
-			}
-			if(myIput[7] == 1){
-				arrImg[7].src = img[1];
-			}
-			if(myIput[7] == 2){
-				arrImg[7].src = img[2];
-			}
-			if(myIput[7] == 3){
-				arrImg[7].src = img[3];
-			}
-			if(myIput[7] == 4){
-				arrImg[7].src = img[4];
-			}
-			if(myIput[7] == 5){
-				arrImg[7].src = img[5];
-			}
-			if(myIput[7] == 6){
-				arrImg[7].src = img[6];
-			}
-			if(myIput[7] == 7){
-				arrImg[7].src = img[7];
-			}
-			if(myIput[7] == 8){
-				arrImg[7].src = img[8];
-			}
-			if(myIput[7] == 9){
-				arrImg[7].src = img[9];
-			}
+						}
+					}
 
-			if(myIput[9] == 0){
-				arrImg[9].src = img[0];
-			}
-			if(myIput[9] == 1){
-				arrImg[9].src = img[1];
-			}
-			if(myIput[9] == 2){
-				arrImg[9].src = img[2];
-			}
-			if(myIput[9] == 3){
-				arrImg[9].src = img[3];
-			}
-			if(myIput[9] == 4){
-				arrImg[9].src = img[4];
-			}
-			if(myIput[9] == 5){
-				arrImg[9].src = img[5];
-			}
-			if(myIput[9] == 6){
-				arrImg[9].src = img[6];
-			}
-			if(myIput[9] == 7){
-				arrImg[9].src = img[7];
-			}
-			if(myIput[9] == 8){
-				arrImg[9].src = img[8];
-			}
-			if(myIput[9] == 9){
-				arrImg[9].src = img[9];
-			}
 			
-		}
 	</script>
 </body>
 </html>
